@@ -64,7 +64,7 @@ public class ServidorWeb {
                         paginaHola = "<html><head><title>otra</title></head><body><p>otra</p></body></html>";
                         break;
                     default:
-                        paginaHola = "<html><head><title>defecto</title><meta http-equiv=\"refresh\" content=\"5;url='http://www.ieselrincon.org'\" /></head><body><p>redirigiendo...</p></body></html>";
+                        paginaHola = "<html><head><title>defecto</title><meta http-equiv=\"refresh\" content=\"5; url=http://www.ieselrincon.org\" /></head><body><p>redirigiendo...</p></body></html>";
                         break; 
                 }
 
@@ -79,7 +79,7 @@ public class ServidorWeb {
                 bw.newLine();
 //                bw.newLine();
 //                bw.write("\n");
-                bw.write("Content-Length: " + paginaHola.length() + 1);
+                bw.write("Content-Length: " + paginaHola.length());
 //                bw.newLine();
 //                bw.write("Date: " + new Date());
                 bw.newLine();
